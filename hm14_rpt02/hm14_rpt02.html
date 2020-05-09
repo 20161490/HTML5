@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm14 : My Homepage V2 </title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .header {
+        width: 100%;
+        height: 10%;
+        background: yellow;
+      }
+      .nav {
+        width: 15%;
+        height: 80%;
+        float: left;
+        background: orange;
+      }
+      .section {
+        width: 85%;
+        height: 80%;
+        float: left;
+        background: lightblue;
+      }
+      .footer {
+        width: 100%;
+        height: 10%;
+        clear: both;
+        background: plum;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+      <h1><a>hm14: 나는 누구인가?</a></h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <h2> 나는 누구? </h2>
+          <ul>
+            <li>
+              <a href="hm14_info.html" target="myframe" width="1500" height="740">나의 모든것</a>
+            </li>
+            <li>
+              <a href="hm14_My daily life.html" target="myframe" width="1500" height="740">나의 하루생활</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2> My Best 3 </h2>
+          <form> music Best 3: <input type="text" list="music Best 3">
+            <br>
+             <datalist id="music Best 3">
+                <option value="숀 - way back home" >
+                <option value="마크툽 - 마음이 말하는 행복">
+                <option value="먼데이키즈 - 사랑이 식었다고 말해도되"> 
+              </datalist> 
+            드라마 best 3 : <input type="text" list="드라마 best 3">
+            <br> 
+            <datalist id="드라마 best 3">
+              <option value="사랑의 불시착">
+              <option value="나의 나라"> 
+              <option value="루갈">
+              </datalist>
+              <input type="reset" value="리셋">  
+          </form>
+        </li>
+        <li>
+          <h2>동호회 모집 </h2>
+          <ul>
+            <li>
+              <a href="hm14_동호회 모집form.html" target="myframe">동호회 모집!</a>
+            </li>
+          </ul>
+        </li>
+        <h2> X-MAS파티 초대장 </h2>
+        <ul>
+          <li>
+            <a href="hm14_card.html" target="myframe" width="1500" height="740">크리스마스 card</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <section class="section" id="main">
+      <article>
+        <iframe src="hm14_info.html" name="myframe" width="1500" height="740">
+        </iframe>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <b>홈페이지 노래</b>
+        <br>
+        <audio src="실습 media/숀_SHAUN_-WayBackHome.mp3" controls autoplay loop>
+        </audio>
+      </p>
+    </footer>
+  </body>
+</html>
