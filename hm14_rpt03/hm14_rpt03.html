@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm14 : My Homepage V3 </title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .header {
+        width: 100%;
+        height: 10%;
+        background: yellow;
+      }
+      .nav {
+        width: 15%;
+        height: 80%;
+        float: left;
+        background: orange;
+      }
+      .section {
+        width: 85%;
+        height: 80%;
+        float: left;
+        background: lightblue;
+      }
+      .footer {
+        width: 100%;
+        height: 10%;
+        clear: both;
+        background: plum;
+      }
+    </style>
+   <script>
+    function load() {
+      var select = document.getElementById("site");
+      window.location = select.options[select.selectedIndex].value;
+    }
+    function loadd() {
+      var select = document.getElementById("sitee");
+      window.location = select.options[select.selectedIndex].value;
+    }
+  </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+      <h1><a>hm14: 나는 누구인가?</a></h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <h2> 나는 누구? </h2>
+          <ul>
+            <li>
+              <a href="hm14_info.html" target="myframe" width="1500" height="740">나의 모든것</a>
+            </li>
+            <li>
+              <a href="hm14_My daily life.html" target="myframe" width="1500" height="740">나의 하루생활</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>My best 3</h3>
+          음악 best 3 :
+          <br>
+          <select id="site">
+            <option value="https://www.youtube.com/watch?v=amOSaNX7KJg" selected>way back home </option>
+            <option value="https://www.youtube.com/watch?v=6whdylCWcr8">마음이 말하는 행복 </option>
+            <option value="https://www.youtube.com/watch?v=tlHTOlnPcbs">사랑이 식었다고 말해도되 </option>
+          </select>
+          <p>
+            <button onclick="load()">확인</button>
+          </p>
+          드라마 best 3 :
+          <br>
+          <select id="sitee">
+            <option value="https://www.youtube.com/watch?v=_gf9fedqmBQ&list=PL2V3l_S4ao2p2qIr2bBFLt9SqHc1NuT41" selected>사랑의 불시착 </option>
+            <option value="https://www.youtube.com/watch?v=606oh4Dj0u8&list=PLay3nM-A3sMFGBex61z19_xc7WrtpmJ1f">나의나라 </option>
+            <option value="https://www.youtube.com/watch?v=x7_OcYtycZE&list=PLDs8E0XdJ8Td8N9CBaWA-YvorP9wK8gOl">루갈 </option>
+          </select>
+          <p>
+            <button onclick="loadd()">확인</button>
+          </p>
+        </li>
+        <li>
+          <h2>동호회 모집 </h2>
+          <ul>
+            <li>
+              <a href="hm14_동호회 모집form.html" target="myframe">동호회 모집!</a>
+            </li>
+          </ul>
+        </li>
+        <h2> X-MAS파티 초대장 </h2>
+        <ul>
+          <li>
+            <a href="hm14_card.html" target="myframe" width="1500" height="740">크리스마스 card</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+
+    <section class="section" id="main">
+      <article>
+        <iframe src="hm14_info.html" name="myframe" width="1500" height="740">
+        </iframe>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <b>홈페이지 노래</b>
+        <br>
+        <audio src="실습 media/숀_SHAUN_-WayBackHome.mp3" controls autoplay loop>
+        </audio>
+      </p>
+    </footer>
+  </body>
+</html>
